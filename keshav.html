@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- This is how you add css -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fcaed868e5.js" crossorigin="anonymous"></script>
+     
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <!-- <img src="images/logo.png" class="logo"> -->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#">Services</a></li> -->
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Data Scientist</p>
+            <h1>Hi, I am <br><span>Keshav Atri</span> </h1> 
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Machine Learning enthusiast
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Machine Learning </span> <br> Machine Learning <br>Deep Learning <br>NLP <br>Computer Vision <br>Neural Networks</li>
+                        <li><span>Libraries </span><br>Pandas <br>Numpy <br>Tensorflow <br>Keras </li>
+                        <li><span>Data Analytics </span><br>Tableau</li>
+                        <li><span>Languages </span><br>Python <br>PostgreSQL</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Oct 2022 </span><br> Research Project - Using tensorflow object detection api,
+                            we detect animal for farmers which is
+                            used to protect crop. We want to produce particular sound frequency for the
+                            animal detected, to keep it away from
+                            the farm </li>
+                        <li><span>June 2021 - July 2021</span> <br>Data Science Bootcamp - Participated in Summer Analytics by Consulting and Analytics Club, IIT GUWAHATI</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span> <br> MSc Data Science - DAIICT, Gandhinagar</li>
+                        <li><span>2021</span> <br> BSc(H) Mathematics - Kirorimal College, Delhi University</li>
+                        <li><span>2018 </span><br> Class 12(CBSE) - 93.4% </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/credit.jpg">
+                <div class="layer">
+                    <h2>Credit Card Fraud Detection</h2>
+                    <p>I have used Logistic Regression, Random Forest Classifier and KNN Classifier.
+                        The results of these models help us give
+                        a clear idea whether our transaction is
+                        legit or fraudulent.</p>
+                        <a href="https://github.com/keshavatri20/Credit-Card-Fraud-Detection"> <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/yolo.jpg" >
+                <div class="layer">
+                    <h2>Real Time Object Detection</h2>
+                    <p>Using tensorflow object detection api with the help of transfer learning,
+                        it detect animals. </p>
+                        <a href="https://github.com/keshavatri20/Real-Time-Object-Detection"> <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/waves.jpeg" >
+                <div class="layer">
+                    <h2>Speech Emotion Recognition</h2>
+                    <p> Classifies the speech into a number of emotions i.e neutral, calm, happy, sad, angry, fearful, surprised etc.</p>
+                        <a href="https://github.com/keshavatri20/Speech-Emotion-Recognition"> <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/EDA.jpg" >
+                <div class="layer">
+                    <h2>Time Series EDA</h2>
+                    <p> To predict the number of total cases, the number of recovered cases and the number of death cases due to COVID-19.</p>
+                        <a href="https://github.com/keshavatri20/Time-Series-EDA"> <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/next.jpg" >
+                <div class="layer">
+                    <h2>Next Word Prediction Model</h2>
+                    <p> Using RNN, LSTM we have
+                        created model which can predict the
+                        next word using the last three words</p>
+                        <a href="https://github.com/keshavatri20/Speech-Emotion-Recognition"> <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#portfolio" class="btn">See more</a>
+    </div>
+</div>
+
+
+
+<!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-envelope"></i> keshavatri20@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/keshav-atri-716957212/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/keshavatri20"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://twitter.com/Keshav_atri_"><i class="fa-brands fa-twitter"></i></a>
+                    <!-- <a href="https://www.instagram.com/keshav_atri/"><i class="fa-brands fa-instagram"></i></a> -->
+                    <a href="https://leetcode.com/keshavatri/"><i class="fa-solid fa-code"></i></a> 
+                </div>
+                <a href="images/Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+ 
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Keshav Atri</p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+
+
+</body>
+</html>
